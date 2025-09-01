@@ -1,0 +1,163 @@
+:root {
+  --bg: #fff;
+  --fg: #111;
+  --accent: #e0e0e0;
+  --font-main: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --max-width: 700px;
+  --radius: 8px;
+  --spacing: 2rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, main, footer {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing) 1rem;
+}
+
+header {
+  text-align: center;
+  margin-top: var(--spacing);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25em;
+}
+
+.tagline {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+section {
+  margin: var(--spacing) 0;
+  padding-bottom: var(--spacing);
+  border-bottom: 1px solid var(--accent);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid var(--accent);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background: var(--accent);
+  color: var(--fg);
+  padding: 0.5em 1em;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: #fafafa;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.project-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+}
+
+.project-card h3 {
+  margin: 0 0 0.5em 0;
+}
+
+.project-card a {
+  color: var(--fg);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+#contact a {
+  color: var(--fg);
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  margin-top: var(--spacing);
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+  header, main, footer {
+    padding: 1.2rem 0.5rem;
+  }
+}
