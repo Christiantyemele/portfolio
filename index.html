@@ -3,57 +3,219 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minimalist Portfolio</title>
+  <title>Christian Defometio – Portfolio & Resume</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Christian Yemele</h1>
-    <p class="tagline">Software Engineer, Businessman, Entrepreneur</p>
+    <div>
+      <img src="assets/profile.jpg" alt="Profile photo of Christian Defometio" class="profile-photo" />
+    </div>
+    <div>
+      <h1>Christian Defometio</h1>
+      <p class="tagline">Rust Systems Developer | Fullstack Engineer | AI Engineer</p>
+      <ul>
+        <li><strong>Location:</strong> Bangangte, Cameroon</li>
+        <li><strong>Email:</strong> <a href="mailto:yemelechristian2@gmail.com">yemelechristian2@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+237654988322">+237 654 98 83 22</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/christiandefometio" target="_blank" rel="noopener">linkedin.com/in/christiandefometio</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/christiandefometio" target="_blank" rel="noopener">github.com/christiandefometio</a></li>
+        <li><strong>Website:</strong> <a href="https://christiandefometio.dev" target="_blank" rel="noopener">christiandefometio.dev</a></li>
+      </ul>
+    </div>
   </header>
   <main>
-    <section id="about">
-      <h2>About</h2>
-      <img src="assets/profile.jpg" alt="Profile photo" class="profile-photo" />
+    <section id="summary">
+      <h2>Summary</h2>
       <p>
-        Brief bio goes here. Describe yourself, your background, and what you do.
+        Results-driven Systems Developer and AI Engineer with deep expertise in Rust, secure communication protocols, cryptography, and advanced AI systems. Demonstrated success in building high-performance backend services, AI-powered applications, and scalable infrastructure. Proven leader and mentor, co-founding the Rust Cameroon Community and driving technology adoption. Adept at architecting solutions for identity, security, and financial technology, with a strong focus on code quality, automation, and innovation.
       </p>
     </section>
+
     <section id="skills">
       <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Other Skill</li>
-      </ul>
+      <article>
+        <h3>Programming & Frameworks</h3>
+        <ul>
+          <li><strong>Languages:</strong> Rust, Python, JavaScript, TypeScript, Go</li>
+          <li><strong>Frameworks:</strong> Axum, Tokio, Express.js, React.js, Flask</li>
+        </ul>
+      </article>
+      <article>
+        <h3>AI & Machine Learning</h3>
+        <ul>
+          <li>LLMs (development, fine-tuning, deployment)</li>
+          <li>LangChain, LlamaIndex, RAG Systems, Vector Embeddings, Model Context Protocol (MCP)</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Databases</h3>
+        <ul>
+          <li><strong>Vector:</strong> Pinecone, Chroma, Weaviate</li>
+          <li><strong>Graph:</strong> Neo4j, Amazon Neptune</li>
+          <li><strong>Relational/NoSQL:</strong> PostgreSQL, MongoDB, MySQL</li>
+        </ul>
+      </article>
+      <article>
+        <h3>DevOps & Infrastructure</h3>
+        <ul>
+          <li>Docker, Terraform, Kubernetes, AWS, CI/CD, Infrastructure as Code</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Security & Protocols</h3>
+        <ul>
+          <li>DIDComm, OAuth2, Encryption, Identity Management, Protocol Design</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Frontend</h3>
+        <ul>
+          <li>React.js, TypeScript, Redux, TailwindCSS, Bootstrap</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Other</h3>
+        <ul>
+          <li>Systems Programming, WebAssembly, Microservices, RESTful APIs, Performance Optimization</li>
+        </ul>
+      </article>
     </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <article>
+        <h3>Senior Rust Systems Developer <span aria-hidden="true">|</span> <time datetime="2024-04">April 2024 – Present</time></h3>
+        <ul>
+          <li>Architected and developed secure Rust communication protocols, achieving robust encryption and data integrity for decentralized identity systems.</li>
+          <li>Integrated advanced cryptographic libraries and optimized serialization/deserialization, improving system efficiency by 30%.</li>
+          <li>Led code reviews and peer programming, maintaining 95%+ code coverage and high-quality standards.</li>
+          <li>Built production-ready identity and authentication systems, processing thousands of secure transactions monthly.</li>
+        </ul>
+        <div>
+          <strong>Key Projects:</strong>
+          <ul>
+            <li>
+              <a href="https://github.com/adorsys/didcomm-mediator-rs" target="_blank" rel="noopener">DIDComm Mediator</a>: Rust implementation of decentralized identity communication
+            </li>
+            <li>
+              <a href="https://github.com/ADORSYS-GIS/eID-Server" target="_blank" rel="noopener">German EID Server</a>: Secure electronic identity verification
+            </li>
+            <li>
+              <a href="https://github.com/adorsys/status-list-server" target="_blank" rel="noopener">OAuth Status List Server</a>: Credential status management
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article>
+        <h3>Infrastructure Developer <span aria-hidden="true">|</span> <time datetime="2024-04">April 2024 – Present</time></h3>
+        <ul>
+          <li>Developed reusable Terraform modules, reducing cloud deployment time by 40%.</li>
+          <li>Implemented CI/CD pipelines and automated security audits, increasing deployment reliability and compliance.</li>
+          <li>Automated configuration testing, resulting in a 25% reduction in infrastructure-related incidents.</li>
+          <li>Integrated Rust applications with cloud infrastructure for scalable, high-performance deployments.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>AI Engineer & Backend Developer <span aria-hidden="true">|</span> <time datetime="2023-11">November 2023 – April 2024</time></h3>
+        <ul>
+          <li>Built MCP (Model Context Protocol) client for VSCode, automating AI workflows and boosting developer productivity.</li>
+          <li>Developed advanced RAG systems for intelligent document processing, improving knowledge retrieval accuracy by 35%.</li>
+          <li>Integrated LLMs into financial applications, enabling real-time analysis and personalized recommendations.</li>
+          <li>Engineered secure, AI-powered financial features (account transfers, payments, investments) with robust encryption and authentication.</li>
+          <li>Utilized JavaScript, React, and Node.js/Express.js to deliver modern, maintainable solutions.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Fullstack Developer <span aria-hidden="true">|</span> <time datetime="2023-09">September 2023 – December 2023</time></h3>
+        <ul>
+          <li>Designed and implemented web scraping interfaces and dynamic chart rendering, streamlining data analysis for end-users.</li>
+          <li>Built Python backend APIs with Flask for automated group generation and data processing.</li>
+          <li>Developed responsive, tested frontends, enhancing user experience and reliability.</li>
+        </ul>
+      </article>
+    </section>
+
     <section id="projects">
       <h2>Projects</h2>
-      <div class="project-card">
-        <img src="assets/project1.png" alt="Screenshot of Project 1" />
-        <div>
-          <h3>Project One</h3>
-          <p>Short description of the project, technologies used, and your role.</p>
-          <a href="#" target="_blank" rel="noopener">View on GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="assets/project2.png" alt="Screenshot of Project 2" />
-        <div>
-          <h3>Project Two</h3>
-          <p>Short description of the project, technologies used, and your role.</p>
-          <a href="#" target="_blank" rel="noopener">View on GitHub</a>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <strong>DIDComm Mediator:</strong> Led the design and implementation of a decentralized identity communication protocol in Rust, enabling secure, scalable messaging for digital identity systems.
+        </li>
+        <li>
+          <strong>German EID Server:</strong> Developed a high-security server for electronic identity verification, supporting government-grade authentication.
+        </li>
+        <li>
+          <strong>OAuth Status List Server:</strong> Built a credential status management system following OAuth specifications, ensuring real-time credential validation.
+        </li>
+        <li>
+          <strong>MCP Client for VSCode:</strong> Created an AI workflow automation tool, integrating LLMs into developer environments for seamless productivity.
+        </li>
+        <li>
+          <strong>Advanced RAG Systems:</strong> Engineered retrieval-augmented generation systems, significantly improving document search and knowledge extraction.
+        </li>
+      </ul>
     </section>
+
+    <section id="education-certifications">
+      <h2>Education & Certifications</h2>
+      <ul>
+        <li>
+          <strong>Cloud and Software Engineering Training</strong> <span aria-hidden="true">|</span> 2023 – 2024
+        </li>
+        <li>
+          <strong>G.C.E Advanced Level Certificate</strong> <span aria-hidden="true">|</span> 2022 – 2023
+        </li>
+        <li>
+          <strong>JSE Certified Entry-Level JavaScript Programmer</strong> <span aria-hidden="true">|</span> 2024
+        </li>
+        <li>
+          <strong>Linux Professional Institute Certification 101 & 102</strong> <span aria-hidden="true">|</span> 2023
+        </li>
+      </ul>
+    </section>
+
+    <section id="leadership-community">
+      <h2>Leadership & Community Impact</h2>
+      <article>
+        <h3>Co-Founder & Leader, Rust Cameroon Community <span aria-hidden="true">|</span> 2024 – Present</h3>
+        <ul>
+          <li>Co-founded and lead the Rust Cameroon Community, growing membership to 100+ developers within the first year.</li>
+          <li>Organized 10+ workshops and meetups, directly training over 200 participants in Rust and modern systems programming.</li>
+          <li>Mentored emerging Rust developers, with several mentees contributing to open-source projects and securing tech roles.</li>
+          <li>Fostered partnerships with local universities and tech hubs to promote Rust adoption and knowledge sharing.</li>
+          <li>
+            <a href="https://www.linkedin.com/company/rustcameroon237" target="_blank" rel="noopener">Community LinkedIn</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Delivered multiple production-grade Rust systems for identity and security, supporting thousands of users.</li>
+        <li>Built and deployed advanced AI systems, including RAG architectures and LLM integration workflows, improving client outcomes by up to 35%.</li>
+        <li>Architected and implemented vector database solutions for semantic search and knowledge management.</li>
+        <li>Developed and standardized MCP protocol implementations, streamlining AI development workflows.</li>
+        <li>Built scalable, secure infrastructure using modern DevOps practices and Infrastructure as Code.</li>
+        <li>Maintained high code quality through rigorous peer review and collaborative development.</li>
+      </ul>
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="yemelechristian2@gmail.com">your.email@example.com</a></p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:yemelechristian2@gmail.com">yemelechristian2@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/christiandefometio" target="_blank" rel="noopener">linkedin.com/in/christiandefometio</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/christiandefometio" target="_blank" rel="noopener">github.com/christiandefometio</a></li>
+        <li><strong>Website:</strong> <a href="https://christiandefometio.dev" target="_blank" rel="noopener">christiandefometio.dev</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+237654988322">+237 654 98 83 22</a></li>
+      </ul>
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Christian Defometio. All rights reserved.</p>
   </footer>
   <!-- PocketFlow Chatbot - Start -->
   <script>
