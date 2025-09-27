@@ -218,5 +218,24 @@
   <footer>
     <p>&copy; 2025 Christian Defometio. All rights reserved.</p>
   </footer>
+  <!-- PocketFlow Chatbot - Start -->
+<script>
+(function() {
+    var script = document.createElement("script");
+    script.src = "https://askthispage.com/embed/chatbot.js";
+    script.onload = function() {
+        initializeChatbot({
+            extra_urls: ["https://www.linkedin.com/in/christian-yemele-a17102292"],
+            prefixes: [],
+            chatbotName: 'Christian Chatbot',
+            wsUrl: 'wss://askthispage.com/api/ws/chat',
+            instruction: 'you are and assistant and your role  is to help visitors of this website with detail and short information less that 500 words based on their query, then respond politely once you provide the result',
+            isOpen: false
+        });
+    };
+    document.head.appendChild(script);
+})();
+</script>
+<!-- PocketFlow Chatbot - End -->
 </body>
 </html>
